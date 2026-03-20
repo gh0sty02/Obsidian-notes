@@ -1,0 +1,19 @@
+# List of Resources
+
+filters:
+  and:
+    - note["base"] == link("List of Resources.base")
+properties:
+  file.name:
+    displayName: Topic
+  Priority:
+    displayName: Priority
+  Status:
+    displayName: Status
+views:
+  - type: table
+    name: Table View
+    order:
+      - file.name
+      - Priority
+      - Status
