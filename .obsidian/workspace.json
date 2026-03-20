@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Study Plan/AI/AI.md",
+                "file": "AI/AI Engineering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI"
+              "title": "AI Engineering"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study Plan/AI/AI.md",
+                "file": "AI/AI Engineering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for AI"
+              "title": "Backlinks for AI Engineering"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Study Plan/AI/AI.md",
+                "file": "AI/AI Engineering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from AI"
+              "title": "Outgoing links from AI Engineering"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Study Plan/AI/AI.md",
+                "file": "AI/AI Engineering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AI"
+              "title": "Outline of AI Engineering"
             }
           },
           {
@@ -195,7 +195,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 379.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,6 +213,15 @@
   },
   "active": "0fb2c05dd157de1f",
   "lastOpenFiles": [
+    "Excalidraw/Flow with Attention layer.md",
+    "Interview Questions/Interview Questions.md",
+    "AI/AI Engineering.md",
+    "Excalidraw",
+    "AI/Roadmap.md",
+    "Interview Questions/INTERVIEW Resources.md",
+    "Interview Questions/INTERVIEW Resources/Second Brain - Resource Links.md",
+    "Second Brain.md",
+    "Study Plan/AI/AI.md",
     "Study Plan 1/AI/AI.md",
     "System Design/System Design Crash Course.md",
     "System Design/Pasted image 20260319174109.png",
@@ -245,19 +254,10 @@
     "Notion/Second Brain DB/150 DSA Problems.md",
     "Interview Questions/React.md",
     "Interview Questions/MongoDB.md",
-    "Interview Questions/HTML and CSS.md",
-    "AI/AI Engineering Roadmap - 12 Weeks to Production-Ready Skills.md",
-    "Study Plan 1/AWS.md",
-    "Study Plan 1/Apache Airflow.md",
-    "Study Plan 1/AI/FastAPI.md",
-    "Interview Questions/INTERVIEW Resources/Second Brain - Resource Links.md",
-    "Interview Questions/INTERVIEW Resources/INTERVIEW Resources.md",
-    "Interview Questions/Interview Questions.md",
     "Interview Questions",
     "Study Plan 1/Articles",
     "Study Plan 1/AI",
     "Study Plan 1/DSA/Resources/List of Resources/List of Resources.base",
-    "Study Plan 1/DSA/Resources/List of Resources",
-    "Study Plan 1/DSA/Resources"
+    "Study Plan 1/DSA/Resources/List of Resources"
   ]
 }

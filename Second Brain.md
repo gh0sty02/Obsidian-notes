@@ -1,6 +1,5 @@
----
+# Second Brain - Resource Links
 
----
 ---
 
 ## 🚀 Startup & Business Ideas
@@ -175,9 +174,9 @@
 
 ### Programming & DSA
 
-- **DSA Patterns (Notion)** : [https://longhaired-zoo-c37.notion.site/DSA-patterns-25e490e7621b8017a38ee3a4931b4581](https://longhaired-zoo-c37.notion.site/DSA-patterns-25e490e7621b8017a38ee3a4931b4581)
+- **DSA Patterns (Notion)** : [https://longhaired-zoo-c37.notion.site/DSA-patterns-25e490e7621b8017a38ee3a4931b4581](https://www.notion.so/25e490e7621b8017a38ee3a4931b4581?pvs=21)
     - Comprehensive DSA pattern guide
-- **150 DSA Problems** : [https://titanium-tray-e39.notion.site/150-Data-Structures-and-Algorithms-Problems-1a8c3f3f47a2801ba028d2643b756374](https://titanium-tray-e39.notion.site/150-Data-Structures-and-Algorithms-Problems-1a8c3f3f47a2801ba028d2643b756374)
+- **150 DSA Problems** : [https://titanium-tray-e39.notion.site/150-Data-Structures-and-Algorithms-Problems-1a8c3f3f47a2801ba028d2643b756374](https://www.notion.so/1a8c3f3f47a2801ba028d2643b756374?pvs=21)
     - Curated list of important DSA problems
 - **Abdul Bari's DSA Course** : [https://www.abdulbari.in/courses/mastering-data-structures-algorithms-using-c-and-c](https://www.abdulbari.in/courses/mastering-data-structures-algorithms-using-c-and-c)
     - Comprehensive C/C++ DSA course
@@ -209,7 +208,7 @@
     - Comprehensive system design resources
 - **System Design Guide** : [https://stan.store/arjay_the_dev/p/my-ultimate-system-design-guide](https://stan.store/arjay_the_dev/p/my-ultimate-system-design-guide)
     - Ultimate system design guide
-- **SWE Offer Vault Case Study** : [https://handsome-workshop-b66.notion.site/SWE-Offer-Vault-Sample-Case-Study-1f7a518ed0c180a68d54dc405d49991f](https://handsome-workshop-b66.notion.site/SWE-Offer-Vault-Sample-Case-Study-1f7a518ed0c180a68d54dc405d49991f)
+- **SWE Offer Vault Case Study** : [https://handsome-workshop-b66.notion.site/SWE-Offer-Vault-Sample-Case-Study-1f7a518ed0c180a68d54dc405d49991f](https://www.notion.so/1f7a518ed0c180a68d54dc405d49991f?pvs=21)
     - Real-world system design case studies
 
 ### General Learning Platforms

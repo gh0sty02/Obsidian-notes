@@ -74,3 +74,45 @@ so size of a 7B parameter model will be  `4 x 7 = 28GB`
 
 - means training on previously trained model and model weights
 - requires fewer resources as the model is already trained
+
+# Transformers
+
+when a text like : 
+`The animal did not cross the road because it was too tired`
+are given to a model, how does it know that the 'it' refers to the animal and not the road. 
+
+for gaining the full understanding of what the "It" is refering to, we have to read the full sentence and make sense out of it
+
+here is where transformers come in, developed by google, transformers read the entire sentence and then establishes a relationship between them to answer the question
+
+the main innovation in transformers is something called *Attention*:
+- it basically asks "while processing this word, which other words in the sentence should i focus on"
+
+for the "it" above:
+- high attention on -> "Animal", 
+- low attention on -> "road", "cross"
+
+the model learns to pay attention to **relevant** words not just nearby ones.
+
+the transformer can be broken down into two parts:
+1. Encoder: 
+   - Takes in your sentence
+   - builds a rich understanding of it with attention
+   - outputs a numerical representation of meaning
+1. Decoders:
+   - takes in the encoder's understanding
+   - generates a response word by word
+   - also uses attention
+
+so basically this is what happens when you type a prompt
+
+![[Flow with Attention layer]]
+
+1. Tokenization: text is broken down into tokens
+2. Embeddings: each token gets converted into a list of numbers (vector) that represent its meaning
+3. Attention Layers : the model runs multiple round of attention - each word looks at every other word and figures out the relationship and context
+4. fed forward layers : after attention, each token passes through a neural network layer that further processes the information further
+5. Repeat 3 and 4 multiple times
+6. output the final prediction ie token, pick it up, add it to input and repeat until response is complete
+
+on pg. 137
