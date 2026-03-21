@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "ebfc468d6455c73c",
@@ -195,7 +195,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 379.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,9 +213,13 @@
   },
   "active": "0fb2c05dd157de1f",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-03-21 17.31.03.excalidraw.md",
+    "AI/AI Engineering.md",
+    "Pasted image 20260321173856.png",
+    "AI/full_transformer_flow.svg",
+    "AI/Unconfirmed 6789.crdownload",
     "Excalidraw/Flow with Attention layer.md",
     "Interview Questions/Interview Questions.md",
-    "AI/AI Engineering.md",
     "Excalidraw",
     "AI/Roadmap.md",
     "Interview Questions/INTERVIEW Resources.md",
@@ -237,8 +241,6 @@
     "Java.gif",
     "ElasticSearch.jpeg",
     "HLD 1.gif",
-    "HLD.gif",
-    "DSA 1.gif",
     "Pranay's Second Brain - Resource Links.md",
     "Interview Questions/Leetcode Patterns.md",
     "Study Plan/Resume Tips.md",
@@ -252,12 +254,9 @@
     "Notion/Second Brain DB/Abdul Bari DSA Course.md",
     "Notion/Second Brain DB/A Little Life Search.md",
     "Notion/Second Brain DB/150 DSA Problems.md",
-    "Interview Questions/React.md",
-    "Interview Questions/MongoDB.md",
     "Interview Questions",
     "Study Plan 1/Articles",
     "Study Plan 1/AI",
-    "Study Plan 1/DSA/Resources/List of Resources/List of Resources.base",
-    "Study Plan 1/DSA/Resources/List of Resources"
+    "Study Plan 1/DSA/Resources/List of Resources/List of Resources.base"
   ]
 }

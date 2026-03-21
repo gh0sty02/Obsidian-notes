@@ -109,10 +109,90 @@ so basically this is what happens when you type a prompt
 ![[Flow with Attention layer]]
 
 1. Tokenization: text is broken down into tokens
-2. Embeddings: each token gets converted into a list of numbers (vector) that represent its meaning
-3. Attention Layers : the model runs multiple round of attention - each word looks at every other word and figures out the relationship and context
-4. fed forward layers : after attention, each token passes through a neural network layer that further processes the information further
-5. Repeat 3 and 4 multiple times
-6. output the final prediction ie token, pick it up, add it to input and repeat until response is complete
+2. Embeddings: -
+	1. each token gets converted into a list of numbers (vector) that represent its meaning. 
+	2. we have positional vectors here so as to know which word come when in the sentence. so basically the embedding will contain what the word means along with where it is in the sentence. 
+	3. the number of indices in the positional vector define the context length of the model
+3. the embeddings are passed through the transformer layers (which contain weights):  
+	1. Attention Layers : the model runs multiple round of attention - each word looks at every other word and figures out the relationship and context
+		eg: [1,2,3] gets transformed into [2,1,4] after passing through this layer i.e it absorbs the context from surrounding word and gets converted into a vector similar to the overall context
+	2. fed forward layers : after attention, each token passes through a neural network layer that further processes the information further. this takes only a single vector transformed in the previous attention layer and then multiplies by weights, applies transformations and then we get a vector which captures a better meaning in the given context
+4. Repeat 3.1 and 3.2 multiple times
+5. Output Unembedding layer
+	1. it is reverse of a embedding matrix
+	2. takes in a matrix and asks "which word in the vocabulary does the vector resemble"
+	3. outputs a probability for each word and then the model picks one and outputs it as the output token.
 
-on pg. 137
+# How does the attention layer work ? 
+![[full_transformer_flow.svg|697]]
+
+for a word to know which other words to pay attention to, it needs to do 3 things:
+1. ask a question about what it is looking for (Query weigh)
+2. advertise what information it contains (Key weight)
+3. actually provide that information if asked (wrt pt. 2) (Value weigh)
+
+let's understand by using a example
+`The cat sat on the mat because it was tired`
+
+we want to figure out what "it" means here. 
+
+### Step 1 - Every word creates Q, K, V
+
+each word multiplies it's embeddings vector by three weight matrices to create three vectors.
+
+- "it" creates Q (its question)
+- every word creates - K (their advertisement)
+- every word creates - V (their actual content)
+
+### Step 2 - "it" asks it question using Q
+
+"It" asks question using Q ie. basically it asks I am a pronoun, who or what am i referring to  
+### Step 3 - Match Q against every word's K
+
+Now "it" compares it's query against every word's key:
+
+`
+```
+"it" Q  vs  "The"  K  →  score: 0.1
+"it" Q  vs  "cat"  K  →  score: 0.8  ← high match
+"it" Q  vs  "sat"  K  →  score: 0.1
+"it" Q  vs  "on"   K  →  score: 0.0
+"it" Q  vs  "the"  K  →  score: 0.1
+"it" Q  vs  "mat"  K  →  score: 0.2
+"it" Q  vs  "because" K → score: 0.0
+"it" Q  vs  "was"  K  →  score: 0.1
+"it" Q  vs  "tired" K →  score: 0.1
+```
+
+"cat" scores highest because its key advertises : 
+> I am a living creature, subject of the sentence
+
+that matches with what "it" is looking for.
+
+### Step 4 - Convert scores to probabilities
+
+The scores get converted so they all add up to 1
+
+### Step 5 - Multiply weights by values
+
+Now "it" collects actual information from each word using these wights
+
+```
+Final vector = 
+  0.6 × cat(V)    ← takes 60% of cat's information
++ 0.2 × mat(V)    ← takes 20% of mat's information  
++ 0.1 × tired(V)  ← takes 10% of tired's information
++ 0.1 × others(V)
+```
+
+### Step 6 - The vector for "it" has been updated
+
+```
+Before attention: "it" = [0.5, 0.5, 0.5]  (generic pronoun)
+After attention:  "it" = [0.8, 0.3, 0.6]  (heavily influenced by "cat")
+```
+
+Now feed forward takes over i.e. the vector for "it" which now carries cat information gets passed into feed forward layer
+> "Okay, this is a pronoun referring to a living creature that is tired. let me encode that meaning properly"
+
+'on page 151'
