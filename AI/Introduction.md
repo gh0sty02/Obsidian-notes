@@ -1,12 +1,11 @@
 
-Roadmap
 [[Roadmap]]
 
 
 
 A token can be a character, a word or even a part of word eg-can't-Can and "t" are two sepeate tokens
 
-![[Pasted image 20260304020420.png]]
+![[tokenisation.png]]
 
 Neural Networks are nothing but just prediction models that predict the next word so you provide a bunch of words to a LLM/Neural Network and it tries to predict a correct next word
 
@@ -23,7 +22,7 @@ there are two types of language modes:
 	- used in text generation and are more popular than masked language models
 	
   
-![[Pasted image 20260311132716.png]]
+![[types of LM.png]]
 
 # Supervision
 
@@ -195,4 +194,34 @@ After attention:  "it" = [0.8, 0.3, 0.6]  (heavily influenced by "cat")
 Now feed forward takes over i.e. the vector for "it" which now carries cat information gets passed into feed forward layer
 > "Okay, this is a pronoun referring to a living creature that is tired. let me encode that meaning properly"
 
-'on page 151'
+## Model Size
+
+- based on the model parameters
+- a higher size model generally outperforms a lesser size model
+- a newer gen model is likely to outperform a older gen model of the same size
+- the num of parameters help us estimate the compute resource required for training and running the model. 
+  e.g. : A model with 7B params -> each param is stored using 2 bytes (16 bits)
+  = 7B x 2 bytes = 14B bytes ~ 14 GB
+- a sparse model has a large percentage of its parameters set to 0 value. this allows it to store and compute data more efficiently. this also means large sparse model can require less compute then a small dense model
+- *MOE* (Mixture of Experts) Model is divided into different group of parameters and each group is an expert. also only a subset of params are active for processing each token
+	- eg : Mistral 8x7B model is a mixture of eight experts, each expert taking around 7B params. if no two experts share parameters, it should have around 56B parameters but as some params are shared, it has only 46.7B params
+	- at each layer, for each token, only 2 experts are active. this means that only 12.9B params are active for each token out of the total 46.7B params, so the cost and speed of this model is same as 12.9B param model
+- when discussing model size, we have to account the size of the data it was trained on. a small model which was trained on large amount of data can outperform a large model which was trained on small amount of data
+- a better measurement of how good a model is trained can be the number of tokens in the dataset because at the EOD, models operate on the tokens
+- pre-training model requires compute and one way to measure this compute is using FLOP or floating point operation. it measures the number of floating point operations performed for a certain task.
+
+	Summary : 
+		Number of params is a proxy for the model's learning capacity
+		Number of tokens a model is trained on, is a proxy for how much a model learned
+		number of FLOPs is a proxy for training cost
+
+# Post-Training
+
+- why is post-training required ? 
+	- in pre-training, the models are trained by self supervision and hence are optimized for text completion and not conversations. also the model is trained on data indiscriminately, so the output can be racist, sexist, rude or just wrong. the goal of post-training is to address these issues
+- consist of two steps
+	- supervised finetuning : training on high quality instruction data to optimize the model for conversations
+	- preference finetuning : further finetune the model to output responses that align with human preferences. preferrable done using reinforcement learning (RL). techniques include : 
+		- RLHF - Reinforcement learning from human feedback
+		- DPO - Direct preference optimization
+		- RLAIF - reinforcement learning from AI Feedback

@@ -11,14 +11,15 @@
 
 ### Chapter 2: Understanding Foundation Models (3 hours)
 
-- [ ]  Read: Training data impact
-- [ ]  Read: Model architecture (transformers)
-- [ ]  Read: Pre-training vs post-training
-- [ ]  Read: RLHF and preference finetuning
-- [ ]  Notes: 3-bullet summary
-- [ ]  Code: Compare different model APIs
+- [x] Read: Training data impact ✅ 2026-03-22
+- [x] Read: Model architecture (transformers) ✅ 2026-03-22
+- [x] Read: Pre-training vs post-training ✅ 2026-03-22
+- [x] Read: RLHF and preference finetuning ✅ 2026-03-22
+- [x] Notes: 3-bullet summary ✅ 2026-03-22
+- [x] Code: Compare different model APIs ✅ 2026-03-22
 
-**Week 1 Complete**: [ ] 5/5 hours
+**Week 1 Complete**: [x] 5/5 hours
+
 
 ---
 

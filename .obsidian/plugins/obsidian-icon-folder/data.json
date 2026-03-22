@@ -6,6 +6,8 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiMap",
+      "LiBook",
       "LiNotebookTabs"
     ],
     "recentlyUsedIconsSize": 5,
@@ -30,5 +32,7 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "AI/AI Engineering.md": "LiNotebookTabs"
+  "AI/Introduction.md": "LiNotebookTabs",
+  "AI/Understanding foundation Models.md": "LiBook",
+  "AI/Roadmap.md": "LiMap"
 }
