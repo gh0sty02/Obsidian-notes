@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/Clippings/anthropicsprompt-eng-interactive-tutorial Anthropic's Interactive Prompt Engineering Tutorial.md",
-                "mode": "preview",
+                "file": "raw/Clippings/Anthropic's Interactive Prompt Engineering Tutorial.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "anthropicsprompt-eng-interactive-tutorial Anthropic's Interactive Prompt Engineering Tutorial"
+              "title": "Anthropic's Interactive Prompt Engineering Tutorial"
             }
           }
         ]
@@ -179,6 +179,14 @@
   },
   "active": "2cccda0e9cef3989",
   "lastOpenFiles": [
+    "raw/Clippings/AIHawk aims to easy job hunt process by automating the job application process..md",
+    "raw/Clippings/Prompt Engineering for AI Guide.md",
+    "raw/Clippings/Pixa for Claude - Creative AI Tools for Claude, Cowork & Claude Code.md",
+    "raw/Clippings/paperclipaipaperclip Open-source orchestration for zero-human companies.md",
+    "raw/Clippings/Impromptu - Random Topic Generator.md",
+    "raw/Clippings/Anthropic's Interactive Prompt Engineering Tutorial.md",
+    "Clippings/mvanhornlast30days-skill AI agent skill that researches any topic.md",
+    "Clippings",
     "Ai agents.md",
     "Untitled.md",
     "CLAUDE.md",
@@ -198,17 +206,10 @@
     "wiki/concepts/transformers.md",
     "wiki/concepts/pretraining-and-posttraining.md",
     "wiki/concepts/prompt-engineering.md",
-    "wiki/concepts/model-sizing.md",
-    "wiki/concepts/docker-fundamentals.md",
-    "wiki/concepts/dsa-patterns.md",
     "wiki/entities",
     "wiki/sources",
     "wiki/concepts",
-    "wiki/index.md",
-    "wiki/log.md",
-    "wiki/overview.md",
     "wiki",
-    "raw/Study Plan/DSA/Resources/List of Resources/Two Pointers.md",
     "raw/Study Plan/DSA/Resources/List of Resources/List of Resources.base",
     "raw/Study Plan/DSA/Resources/List of Resources",
     "raw/Study Plan/DSA/Resources",
@@ -219,7 +220,6 @@
     "raw/AI/media/types of LM.png",
     "raw/Study Plan/DSA",
     "raw/Study Plan/AI",
-    "raw/Study Plan/Articles",
     "raw/System Design/Pasted image 20260319174109.png",
     "/raw/System Design/Pasted image 20260319174109.png",
     "/raw/AI/media/types of LM.png",
