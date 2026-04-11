@@ -32,7 +32,7 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "AI/Introduction.md": "LiNotebookTabs",
-  "AI/Understanding foundation Models.md": "LiBook",
-  "AI/Roadmap.md": "LiMap"
+  "raw/AI/Introduction.md": "LiNotebookTabs",
+  "raw/AI/Roadmap.md": "LiMap",
+  "raw/AI/Understanding foundation Models.md": "LiBook"
 }
