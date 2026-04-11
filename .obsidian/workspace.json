@@ -11,14 +11,14 @@
             "id": "2263de6a3c75270b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "raw/Second Brain.md",
-                "mode": "source",
-                "source": false
+                "aFile": "raw/Clippings/anthropicsprompt-eng-interactive-tutorial Anthropic's Interactive Prompt Engineering Tutorial.md",
+                "bFile": "raw/Clippings/anthropicsprompt-eng-interactive-tutorial Anthropic's Interactive Prompt Engineering Tutorial.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Second Brain"
+              "icon": "diff",
+              "title": "Diff: anthropicsprompt-eng-interactive-tutorial Anthropic's Interactive Prompt Engineering Tutorial  (Working Tree)"
             }
           }
         ]
@@ -156,13 +156,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "raw/Second Brain.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Second Brain"
+              "title": "Outline"
             }
           },
           {
@@ -180,7 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 385.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,11 +195,17 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "22c5f91554242863",
+  "active": "2263de6a3c75270b",
   "lastOpenFiles": [
+    "raw/Second Brain.md",
+    "raw/Clippings/Prompt Engineering for AI Guide.md",
+    "raw/Clippings/Pixa for Claude - Creative AI Tools for Claude, Cowork & Claude Code.md",
+    "raw/Clippings/paperclipaipaperclip Open-source orchestration for zero-human companies.md",
+    "raw/Clippings/Impromptu - Random Topic Generator.md",
+    "raw/Clippings/anthropicsprompt-eng-interactive-tutorial Anthropic's Interactive Prompt Engineering Tutorial.md",
+    "raw/Clippings",
     "raw/AI tools.md",
     "wiki/overview.md",
-    "raw/Second Brain.md",
     "wiki/entities/ai-tools-and-resources.md",
     "wiki/entities",
     "wiki/sources/second-brain.md",
@@ -223,12 +228,7 @@
     "wiki/concepts/tokenization.md.tmp.19120.1775843825673",
     "wiki/concepts/attention-mechanism.md",
     "wiki/concepts/attention-mechanism.md.tmp.19120.1775843815996",
-    "wiki/concepts/transformers.md",
     "wiki/concepts",
-    "CLAUDE.md",
-    "raw/Study Plan/AI/AI.md",
-    "wiki/log.md",
-    "wiki/index.md",
     "Untitled.base",
     "raw/AI/media/pre and post training techniques.png",
     "raw/AI/media/probability distribution.png",
@@ -242,7 +242,6 @@
     "raw/System Design/Pasted image 20260319174109.png",
     "Study Plan 1.gif",
     "PostgreSQL 1.jpeg",
-    "PostgreSQL.jpeg",
-    "Moksh Teng SWE Resume 10 1.pdf"
+    "PostgreSQL.jpeg"
   ]
 }

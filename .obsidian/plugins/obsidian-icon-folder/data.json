@@ -31,8 +31,5 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  },
-  "raw/AI/Introduction.md": "LiNotebookTabs",
-  "raw/AI/Roadmap.md": "LiMap",
-  "raw/AI/Understanding foundation Models.md": "LiBook"
+  }
 }
