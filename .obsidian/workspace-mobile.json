@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/Clippings/Anthropic's Interactive Prompt Engineering Tutorial.md",
+                "file": "Clippings/mempalaceAI memory system.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Anthropic's Interactive Prompt Engineering Tutorial"
+              "title": "mempalaceAI memory system"
             }
           }
         ]
@@ -179,12 +179,13 @@
   },
   "active": "2cccda0e9cef3989",
   "lastOpenFiles": [
+    "raw/Clippings/Anthropic's Interactive Prompt Engineering Tutorial.md",
+    "Clippings/mempalaceAI memory system.md",
     "raw/Clippings/AIHawk aims to easy job hunt process by automating the job application process..md",
     "raw/Clippings/Prompt Engineering for AI Guide.md",
     "raw/Clippings/Pixa for Claude - Creative AI Tools for Claude, Cowork & Claude Code.md",
     "raw/Clippings/paperclipaipaperclip Open-source orchestration for zero-human companies.md",
     "raw/Clippings/Impromptu - Random Topic Generator.md",
-    "raw/Clippings/Anthropic's Interactive Prompt Engineering Tutorial.md",
     "Clippings/mvanhornlast30days-skill AI agent skill that researches any topic.md",
     "Clippings",
     "Ai agents.md",
@@ -205,7 +206,6 @@
     "wiki/concepts/system-design-fundamentals.md",
     "wiki/concepts/transformers.md",
     "wiki/concepts/pretraining-and-posttraining.md",
-    "wiki/concepts/prompt-engineering.md",
     "wiki/entities",
     "wiki/sources",
     "wiki/concepts",
