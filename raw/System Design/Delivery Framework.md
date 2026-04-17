@@ -45,4 +45,29 @@ The goal is to clear requirements of the system
 		- how well the system need to handle failures ? consider redunduncy and recovery mechanisms
 	- Compliance: 
 		- are there any legal or regulatory requirements the system needs to meet ? 
--
+
+3. Capacity Estimation
+	- not required in many cases but maybe required in some cases
+
+4. Core entities:
+	- entities that your api will exachange
+	- model that will be used to persist data
+	- start with small list and then build out as you go
+	- questions to ask to help identify core entities:
+		- who are the actors in the system ? are they overlapping
+		- what are the nouns or resources necessary to satisfy the functional requirements
+
+5. API or System Interface
+	- use REST for default api and design endpoints.
+	- eg : 
+		```
+		POST /v1/tweets
+		body : {
+			"text": string
+		}
+		
+		POST v1/tweets/{tweetId} 
+		```
+5. Data Flow (Optional)
+	- might be useful for data-processing systems where we have to define a set of actions or processes that the system performs to produce the desired output
+

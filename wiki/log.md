@@ -19,6 +19,23 @@ grep "ingest" wiki/log.md              # all ingests
 
 ---
 
+## [2026-04-17] ingest | Batch Ingest — Study Plans, Clippings & System Design
+
+- Summary: Full ingest of all remaining raw/ content: Study Plan files (Java, Spring, Microservices, K8s, AWS, PostgreSQL, Redis, Elasticsearch, Hibernate, LLD, ReactJS, FastAPI), System Design Core Concepts, new Clippings (AI agent tools, prompt engineering resources)
+- Sources processed:
+  - raw/Study Plan/Java.md, Spring Boot.md, Spring Core.md, Hibernate.md, PostgreSQL.md, Redis.md, ElasticSearch.md, Kubernetes.md, Microservices.md, LLD.md, ReactJS.md, Resume Tips.md, AI/FastAPI.md
+  - raw/System Design/Core Concepts.md, Key Technologies.md
+  - raw/AI/Prompt Engineering.md
+  - raw/Clippings/MemPalace AI Memory System.md, Last30Days AI Research Skill.md, paperclipai paperclip.md, AIHawk.md, Anthropic's Interactive Prompt Engineering Tutorial.md, Prompt Engineering for AI Guide.md
+- Source pages created: java-study-plan, spring-study-plan, microservices-study-plan, kubernetes-study-plan, aws-study-plan, postgresql-study-plan, redis-study-plan, elasticsearch-study-plan, hibernate-study-plan, lld-study-plan, reactjs-study-plan, fastapi-study-plan
+- Concept pages created: java-internals, spring-framework, microservices-patterns, kubernetes, aws-architecture, postgresql, redis, elasticsearch, hibernate-orm, low-level-design, react-fundamentals, fastapi
+- Entity pages created: ai-agent-tools
+- Pages updated: prompt-engineering (in-context learning, needle-in-haystack, Anthropic tutorial), system-design-fundamentals (sharding, consistent hashing, networking, indexing), index.md
+- Raw files removed by user (content preserved in wiki): Java.md, Spring Boot.md, Spring Core.md, Hibernate.md, PostgreSQL.md, Microservices.md, ReactJS.md, Resume Tips.md, Maven.md, Debezium.md, HTML-CSS-JS.md, Study Plan.md, Articles/
+- Not yet wikified (raw sources exist): Apache Airflow, Study Plan/AI/AI.md, Interview Questions (Express, HTML/CSS, NodeJs, MongoDB, NextJS, Redux)
+
+---
+
 ## [2026-04-10] ingest | Batch Ingest — All raw/ Sources
 
 - Summary: Full batch ingest of all content from raw/ directory (~70 files across AI, Study Plan, Interview Questions, System Design, and resources)

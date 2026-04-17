@@ -1,8 +1,8 @@
 ---
 title: Prompt Engineering
-tags: [concept, llm, prompting, few-shot, chain-of-thought]
-sources: [sources/ai-engineering-roadmap.md]
-last-updated: 2026-04-10
+tags: [concept, llm, prompting, few-shot, chain-of-thought, in-context-learning]
+sources: [sources/ai-engineering-roadmap.md, sources/prompt-engineering-raw.md]
+last-updated: 2026-04-17
 ---
 
 # Prompt Engineering
@@ -92,6 +92,38 @@ Treat prompts like code:
 
 ---
 
+## In-Context Learning
+
+In-context learning (ICL) means the model learns from examples or information within the current prompt — no weight updates occur.
+
+**Prompt vs Context distinction:**
+- **Prompt** — the entire input to the model
+- **Context** — the information provided within the prompt for the model to use
+
+### Zero-Shot & Few-Shot (ICL)
+- Each example in the prompt = one "shot"
+- More examples → better performance, up to context length limits
+- Trade-off: more shots = longer prompt = higher inference cost
+- Practical ceiling: 5–10 shots for most tasks
+
+### Needle in a Haystack Test
+Used to evaluate **context efficiency** (not just context length):
+- Insert a specific fact ("needle") at different positions in a long document ("haystack")
+- Ask the model to retrieve the needle
+- Reveals positional biases — some models perform better with instructions at start vs end
+- GPT-4 and Claude show different retrieval patterns across context positions
+
+### Context Window Considerations
+- Longer context ≠ better retrieval — models may ignore middle content ("lost in the middle" phenomenon)
+- Critical instructions: place at start OR end of context
+- Anthropic's prompt engineering tutorial recommends testing retrieval quality, not just context length
+
+## Anthropic Resources
+
+- **Interactive Tutorial:** `github.com/anthropics/prompt-eng-interactive-tutorial` — comprehensive step-by-step guide to prompting Claude
+- **Google Cloud Guide:** Covers prompt engineering fundamentals with vendor-neutral perspective
+
 ## Related
 - [[concepts/rag-architecture]]
 - [[concepts/sampling-techniques]]
+- [[concepts/tokenization]] — context length is measured in tokens

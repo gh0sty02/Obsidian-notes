@@ -1,8 +1,8 @@
 ---
 title: System Design Fundamentals
-tags: [concept, system-design, hld, distributed-systems, interviews]
+tags: [concept, system-design, hld, distributed-systems, interviews, sharding, caching]
 sources: [sources/system-design-crash-course.md, sources/hld-study-plan.md, sources/system-design-delivery-framework.md]
-last-updated: 2026-04-10
+last-updated: 2026-04-17
 ---
 
 # System Design Fundamentals
@@ -120,7 +120,82 @@ YouTube 1080p: 5MB/min; 1M concurrent streams → 83 Gbps bandwidth
 
 ---
 
+## Networking Fundamentals
+
+Choose transport protocol based on communication pattern:
+
+| Protocol | Use When |
+|----------|---------|
+| HTTP/REST | Default for most APIs; stateless request-response |
+| WebSockets | Bidirectional real-time (chat, live collaboration) |
+| Server-Sent Events (SSE) | Server-to-client push only (live scores, notifications) |
+| gRPC | Low-latency, streaming, internal service-to-service |
+
+> Only use WebSockets when bidirectional is genuinely required — they add complexity for connection management.
+
+## API Design Principles
+
+- REST by default; map resources to URLs (`/users/{id}`)
+- **Offset pagination** — queries all rows, discards irrelevant ones; simple but slow at large offsets
+- **Cursor pagination** — uses a pointer (last seen ID/timestamp); efficient for large datasets
+- Rate limiting protects from bots and DDoS
+
+## Data Modelling
+
+- **SQL** — structured data, clear relationships, strong consistency, complex queries, transactions
+- **NoSQL** — flexible schema, horizontal scaling without joins
+
+**Normalization vs Denormalization:**
+- Start normalized (no duplication, requires joins)
+- Denormalize selectively if read performance is critical (accept update complexity)
+
+## Sharding (Deep Dive)
+
+When a single DB is outgrown, split data across independent servers.
+
+**Hash-based sharding:**
+```
+shard = hash(shard_key) % total_shards
+```
+Spreads data uniformly; consecutive keys land on different shards.
+
+**Problem with naive hash sharding:** adding a shard changes `total_shards` → all keys remap → massive data migration.
+
+**Consistent Hashing (solution):**
+- Arrange shards on a virtual "ring" (0°–360°)
+- To find shard for a key: hash the key → walk clockwise → first shard encountered
+- Adding a shard only remaps a fraction of keys (those between the new node and its predecessor)
+
+```
+Ring positions: A=0°, B=180°, C=270°
+Key hashes to 35° → walks clockwise → hits B at 180°
+Add shard D at 90°: only keys between 0°–90° move to D
+```
+
+## Indexing
+
+- Indexes allow `O(log n)` lookup instead of `O(n)` full scan
+- Index on frequently queried columns: `email`, `userId`, foreign keys
+- **Composite indexes** — multi-column; leftmost prefix rule applies
+- Cost: every INSERT/UPDATE/DELETE must also update indexes; indexes consume disk space
+
+## Caching (Detailed)
+
+**Cache failure handling:**
+- All traffic hitting DB simultaneously on cache failure = **cache stampede**
+- Mitigation: fallback in-memory cache + circuit breakers
+- **CDN caching** — static assets (images, JS, CSS) cached at edge nodes
+- **In-process caching** — small, rarely-changing values (config, feature flags)
+
+**TTL strategy:**
+- Short TTLs: accept some staleness; simpler invalidation
+- Immediate invalidation on write: strongly consistent; more complex
+
 ## Related
 - [[concepts/kafka-architecture]]
 - [[concepts/docker-fundamentals]]
+- [[concepts/redis]] — primary caching tool
+- [[concepts/postgresql]] — SQL database deep dive
+- [[concepts/elasticsearch]] — search layer
+- [[concepts/microservices-patterns]] — service communication patterns
 - [[sources/system-design-crash-course.md]]
