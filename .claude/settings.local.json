@@ -8,7 +8,9 @@
       "Bash(mv \"system design roadmap.md\" \"System Design in 10 Days.md\")",
       "Bash(mv \"45 Day DSA Roadmap.md\" \"45-Day DSA Roadmap.md\")",
       "Bash(mv \"Job Portals & Companies in Denmark Hiring Foreigners in 2026.md\" \"Denmark Jobs for Foreigners.md\")",
-      "Bash(mv \"100+ Prompt Shortcuts That Make AI 10x More Useful \\(Cheat Sheet\\).md\" \"AI Prompt Shortcuts Cheat Sheet.md\")"
+      "Bash(mv \"100+ Prompt Shortcuts That Make AI 10x More Useful \\(Cheat Sheet\\).md\" \"AI Prompt Shortcuts Cheat Sheet.md\")",
+      "Bash(bash /c/Users/prana/.claude/statusline-command.sh)",
+      "Bash(py --version)"
     ]
   }
 }

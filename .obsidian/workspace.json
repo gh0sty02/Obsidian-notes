@@ -11,12 +11,14 @@
             "id": "2263de6a3c75270b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20260415232834.png"
+                "file": "raw/System Design/Key Techonologies.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260415232834"
+              "icon": "lucide-file",
+              "title": "Key Techonologies"
             }
           }
         ]
@@ -193,8 +195,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "22c5f91554242863",
+  "active": "2263de6a3c75270b",
   "lastOpenFiles": [
+    "raw/System Design/Core Concepts.md",
+    "raw/System Design/Key Techonologies.md",
+    "Pasted image 20260415232834.png",
     "raw/Study Plan/Kafka.md",
     "wiki/entities/ai-agent-tools.md",
     "wiki/concepts/fastapi.md",
@@ -219,10 +224,7 @@
     "wiki/sources/aws-study-plan.md",
     "wiki/sources/kubernetes-study-plan.md",
     "wiki/sources/microservices-study-plan.md",
-    "wiki/sources/spring-study-plan.md",
-    "wiki/sources/java-study-plan.md",
     "Pasted image 20260416001035.png",
-    "Pasted image 20260415232834.png",
     "raw/Clippings",
     "raw/Clippings",
     "wiki/entities",
