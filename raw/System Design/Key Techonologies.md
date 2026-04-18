@@ -26,3 +26,12 @@
 	7. for downloading
 		1. client request a specific file from the server and is returned the presigned url
 		2. client uses this presigned url to download  the file via cdn.
+4. Search Optimized Database
+	1. sometimes you will need to implement text search as feature, it is a ability to search through large amount of text data to find relevant results. 
+	2. the query is based on exact text matches or results such as 
+	3. ```
+	   SELECT * FROM documents WHERE document_text LIKE '%search_term%'
+	   ```
+	4. search optimised databases use techniques such as indexing, tokenization and stemming to make search queries fast and efficient
+	5. they use inverted indexes which are data structure that map from words to documents which contain them. 
+	6. eg of a inverted index
