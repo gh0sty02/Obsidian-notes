@@ -1,0 +1,16 @@
+# Obsidian config (optional - choose what to keep)
+.obsidian/workspace.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+!.obsidian/plugins
