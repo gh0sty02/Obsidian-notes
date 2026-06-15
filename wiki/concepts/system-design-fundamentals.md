@@ -1,8 +1,8 @@
 ---
 title: System Design Fundamentals
 tags: [concept, system-design, hld, distributed-systems, interviews, sharding, caching]
-sources: [sources/system-design-crash-course.md, sources/hld-study-plan.md, sources/system-design-delivery-framework.md]
-last-updated: 2026-04-17
+sources: [sources/system-design-crash-course.md, sources/hld-study-plan.md, sources/system-design-delivery-framework.md, sources/technical-interview-roadmaps.md, sources/frontend-design-clippings.md]
+last-updated: 2026-06-16
 ---
 
 # System Design Fundamentals
@@ -109,6 +109,12 @@ In practice, partition tolerance is mandatory. So the real choice is **CP vs AP*
 **India-specific:** i18n support, intermittent connectivity, low-end device optimization, massive scale
 
 ---
+
+## Practice Resources
+
+The clipping batch adds external system-design primers, compressed revision plans, and diagramming/simulation tools. Use them to practice communication and trade-off analysis, not as a substitute for the core interview framework above.
+
+Related: [[concepts/technical-interview-prep]]
 
 ## Estimation Reference Numbers
 

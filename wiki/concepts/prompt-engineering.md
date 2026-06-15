@@ -1,8 +1,8 @@
 ---
 title: Prompt Engineering
 tags: [concept, llm, prompting, few-shot, chain-of-thought, in-context-learning]
-sources: [sources/ai-engineering-roadmap.md, sources/prompt-engineering-raw.md]
-last-updated: 2026-04-17
+sources: [sources/ai-engineering-roadmap.md, sources/prompt-engineering-raw.md, sources/prompt-engineering-clippings.md]
+last-updated: 2026-06-16
 ---
 
 # Prompt Engineering
@@ -122,6 +122,16 @@ Used to evaluate **context efficiency** (not just context length):
 
 - **Interactive Tutorial:** `github.com/anthropics/prompt-eng-interactive-tutorial` — comprehensive step-by-step guide to prompting Claude
 - **Google Cloud Guide:** Covers prompt engineering fundamentals with vendor-neutral perspective
+
+## Prompt Pattern Library
+
+The clipping batch adds practical prompt libraries that can be mined for repeatable patterns:
+
+- **Shortcuts:** critique, rewrite, summarize, compare, extract, rank, brainstorm, role-play, and convert-to-structured-output prompts.
+- **Career workflows:** resume tailoring, job targeting, cover letters, skill-gap analysis, outreach drafts, and interview preparation.
+- **Role-specific prompting:** prompts can be adapted by job function, but should be tested against real examples instead of copied blindly.
+
+Use these as starting templates. Durable prompt engineering still requires clear task framing, examples, constraints, evaluation, and iteration.
 
 ## Related
 - [[concepts/rag-architecture]]

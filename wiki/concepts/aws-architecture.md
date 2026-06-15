@@ -1,8 +1,8 @@
 ---
 title: AWS Architecture & Services
 tags: [aws, cloud, ec2, lambda, s3, vpc, rds, dynamodb]
-sources: [sources/aws-study-plan.md]
-last-updated: 2026-04-17
+sources: [sources/aws-study-plan.md, sources/technical-interview-roadmaps.md]
+last-updated: 2026-06-16
 ---
 
 # AWS Architecture & Services
@@ -107,6 +107,12 @@ VPC (CIDR block, e.g., 10.0.0.0/16)
 | Reliability | Multi-AZ, multi-region, health checks, auto-recovery |
 | Performance Efficiency | Right-sizing, auto scaling, caching, CDN |
 | Cost Optimization | Reserved/Spot, S3 lifecycle, right-sizing, tagging |
+
+## Learning Resources
+
+The clipping batch adds free AWS AI-course announcements and a cloud-engineer roadmap. Use these as study hooks for cloud interviews, deployment, networking, and operational ownership.
+
+Related: [[concepts/technical-interview-prep]]
 
 ## See Also
 

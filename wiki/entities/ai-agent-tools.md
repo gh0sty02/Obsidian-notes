@@ -1,8 +1,8 @@
 ---
 title: AI Agent Tools & Frameworks
 tags: [ai-agents, tools, memory, orchestration, automation]
-sources: [sources/second-brain.md]
-last-updated: 2026-04-17
+sources: [sources/second-brain.md, sources/ai-agent-tools-clippings.md]
+last-updated: 2026-06-16
 ---
 
 # AI Agent Tools & Frameworks
@@ -56,9 +56,22 @@ Curated tools for building, extending, and automating with AI agents. Sourced fr
 - Creative AI tools built for Claude, Cowork, and Claude Code
 - Source: `raw/Clippings/Pixa for Claude - Creative AI Tools for Claude, Cowork & Claude Code.md`
 
-### Impromptu
-- Random topic generator tool
-- Source: `raw/Clippings/Impromptu - Random Topic Generator.md`
+### Claude Code Job Search Workflow
+- Example clipping where Claude Code was used to rank and triage 740+ job offers
+- Connects agentic coding tools to [[concepts/ai-career-strategy]]
+
+---
+
+## Code, Email, and Media Assistants
+
+### Denigma
+- AI code explanation assistant for understanding unfamiliar code and programming constructs
+
+### Inbox Zero
+- Open-source AI email assistant for reaching and maintaining inbox zero
+
+### Civitai
+- Generative AI model and asset repository; useful as an ecosystem reference rather than an agent framework
 
 ---
 

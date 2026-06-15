@@ -58,3 +58,32 @@ grep "ingest" wiki/log.md              # all ingests
 - Entity pages created: ai-tools-and-resources
 - Pages updated: wiki/index.md, wiki/overview.md, wiki/log.md
 - Not yet wikified (raw sources exist, no wiki pages): Java, Spring Boot, Hibernate, Maven, PostgreSQL, Redis, ElasticSearch, Debezium, Airflow, Kubernetes, Microservices, LLD, ReactJS, HTML-CSS-JS, AWS, FastAPI
+
+---
+
+## [2026-06-16] cleanup | Raw Clippings Filter
+
+- Summary: Removed raw clipping/inbox files that were empty, off-topic, or ephemeral browser state.
+- Files removed:
+  - raw/Clippings/Why Being AI-First Is Mandatory.md
+  - raw/Clippings/Impromptu - Random Topic Generator.md
+  - raw/00-inbox/browser-tabs/browser-tabs-2026-06-15-224350.md
+- Files kept despite low word count: raw/Clippings/AIHawk - automate job application.md, raw/Clippings/Big Tech Programs.md
+
+---
+
+## [2026-06-16] ingest | Batch Clipping Update
+
+- Summary: Promoted useful raw clippings into batch wiki source pages across AI agents, prompting, interviews, career, developer tools, frontend/design, finance, and general resources.
+- Source pages created: ai-agent-tools-clippings, prompt-engineering-clippings, technical-interview-roadmaps, career-job-search-clippings, developer-resource-clippings, frontend-design-clippings, finance-investing-clippings, general-web-resource-clippings
+- Concept pages created: technical-interview-prep, ai-career-strategy, developer-tools, frontend-design-resources, finance-resources
+- Pages updated: entities/ai-agent-tools, concepts/prompt-engineering, concepts/dsa-patterns, concepts/system-design-fundamentals, concepts/aws-architecture, index.md, overview.md
+- Policy note: keep clippings from all fields, including finance, when they contain concrete data, links, or useful descriptions. Only skip or remove vague, empty, broken, redirect, or metadata-only captures.
+
+---
+
+## [2026-06-16] maintenance | Shorten Long Raw Clipping Filenames
+
+- Summary: Renamed long `raw/Clippings/` filenames to shorter kebab-case names so Git on Windows can index them reliably.
+- Files renamed: 14
+- Wiki references updated: sources/ai-agent-tools-clippings.md

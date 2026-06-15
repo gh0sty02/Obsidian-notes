@@ -1,8 +1,8 @@
 ---
 title: DSA Patterns
 tags: [concept, dsa, algorithms, leetcode, interviews]
-sources: [sources/leetcode-patterns.md, sources/dsa-cheat-sheet.md]
-last-updated: 2026-04-10
+sources: [sources/leetcode-patterns.md, sources/dsa-cheat-sheet.md, sources/technical-interview-roadmaps.md]
+last-updated: 2026-06-16
 ---
 
 # DSA Patterns
@@ -157,6 +157,11 @@ Python: `heapq` (min-heap by default; negate values for max-heap)
 
 ---
 
+## Additional Practice Resources
+
+The new clipping batch adds NeetCode 150, InterviewBit, TypeScript algorithms, JavaScript visual examples, Python competitive-programming cheatsheets, and interactive algorithm visualizers. Keep [[concepts/dsa-patterns]] as the organizing map, then use these resources for practice volume.
+
 ## Related
 - [[sources/leetcode-patterns.md]]
 - [[concepts/system-design-fundamentals]]
+- [[concepts/technical-interview-prep]]

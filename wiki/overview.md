@@ -1,11 +1,22 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [sources/foundation-models.md, sources/ai-engineering-roadmap.md, sources/system-design-crash-course.md]
-last-updated: 2026-04-10
+sources: [sources/foundation-models.md, sources/ai-engineering-roadmap.md, sources/system-design-crash-course.md, sources/career-job-search-clippings.md, sources/developer-resource-clippings.md, sources/finance-investing-clippings.md]
+last-updated: 2026-06-16
 ---
 
 # Wiki Overview
+
+## June 2026 Clipping Update
+
+The clipping catalog now covers more than the AI/backend track:
+
+- [[concepts/technical-interview-prep]] for coding, system design, cloud, AI engineer, and frontend interview resources
+- [[concepts/ai-career-strategy]] for referrals, startup targeting, solutions engineering, and AI-assisted job-search workflows
+- [[concepts/developer-tools]] and [[concepts/frontend-design-resources]] for practical building resources
+- [[concepts/finance-resources]] for finance/investing references
+
+Rule for future clipping cleanup: keep files from all fields when they contain concrete data, links, or useful descriptions. Remove or skip only vague, empty, broken, redirect, or metadata-only captures.
 
 ---
 

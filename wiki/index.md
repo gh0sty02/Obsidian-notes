@@ -1,6 +1,6 @@
 ---
 title: Wiki Index
-last-updated: 2026-04-17
+last-updated: 2026-06-16
 ---
 
 # Wiki Index
@@ -37,7 +37,13 @@ Content catalog. Updated after every ingest. Read this first when answering quer
 - [[sources/reactjs-study-plan]] — ReactJS: Virtual DOM, Fiber, hooks, state management, SSR, RSC
 
 ### Career & General
+- [[sources/career-job-search-clippings]] — Job-search strategy, referrals, startups, international roles, solutions engineering, and AI-assisted applications
+- [[sources/developer-resource-clippings]] — Developer tools, open-source SaaS alternatives, backend utilities, project ideas, and coding references
+- [[sources/finance-investing-clippings]] — Finance and investing resources: market snapshots, screeners, Tijori, Zerodha Varsity, and fund pages
+- [[sources/frontend-design-clippings]] — Frontend/design resources: CSS practice, UI inspiration, icons, SVG/Lottie animation, and architecture diagramming tools
+- [[sources/general-web-resource-clippings]] — Useful general resources that do not fit the main technical/career/finance buckets
 - [[sources/second-brain]] — Curated 180+ link collection across AI, dev tools, learning, career, and design
+- [[sources/technical-interview-roadmaps]] — DSA, system design, AI engineer, cloud, frontend, and language-specific interview roadmaps
 
 ---
 
@@ -72,8 +78,15 @@ Content catalog. Updated after every ingest. Read this first when answering quer
 - [[concepts/elasticsearch]] — Lucene internals, inverted index, Query DSL, BM25 scoring, performance, ELK
 
 ### Design & Frontend
+- [[concepts/frontend-design-resources]] — CSS practice, UI/UX pattern libraries, visual assets, animation tools, and design inspiration
 - [[concepts/low-level-design]] — SOLID, Creational/Structural/Behavioral patterns, LLD interview problems
 - [[concepts/react-fundamentals]] — Virtual DOM, Fiber, hooks, state management, RSC, hydration, performance
+
+### Career, Tools & Finance
+- [[concepts/ai-career-strategy]] — AI/backend job-search positioning, referrals, solutions engineering, startup targeting, and AI-assisted workflows
+- [[concepts/developer-tools]] — Open-source tools, backend platforms, productivity utilities, reference sites, and portfolio project seeds
+- [[concepts/finance-resources]] — Finance and investing resource catalog; market data should be re-checked live
+- [[concepts/technical-interview-prep]] — Coding, system design, AI engineer, cloud/backend, and frontend interview preparation
 
 ---
 
